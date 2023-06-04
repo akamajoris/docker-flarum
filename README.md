@@ -8,10 +8,8 @@
 
 ### Tag available
 
- - **latest** [(Dockerfile)](https://github.com/mondediefr/docker-flarum/blob/master/Dockerfile)
- - **stable** [(Dockerfile)](https://github.com/mondediefr/docker-flarum/blob/master/Dockerfile)
- - **1.0.2** [(Dockerfile)](https://github.com/mondediefr/docker-flarum/blob/1.0.2/Dockerfile)
- - **1.2.0** [(Dockerfile)](https://github.com/mondediefr/docker-flarum/blob/1.2.0/Dockerfile)
+ - **1.7.2** [(Dockerfile)](https://github.com/mondediefr/docker-flarum/blob/1.0.2/Dockerfile)
+ - **1.8.0** [(Dockerfile)](https://github.com/mondediefr/docker-flarum/blob/1.2.0/Dockerfile)
 
 ### Features
 
@@ -24,7 +22,7 @@
 - OPCache extension configured
 
 ### Build-time variables
-
+- **MAJOR_UPDATE** = this env is a trigger to clear cache (you should enable previously installed extensions manualy)
 - **VERSION** = Version of [flarum/flarum](https://github.com/flarum/flarum) skeleton (default: *v1.3.0*)
 
 ### Ports
