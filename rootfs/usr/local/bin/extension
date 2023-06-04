@@ -25,7 +25,7 @@ su-exec "${UID}:${GID}" touch "${LIST_FILE}"
 case "${action}" in
   # Install a flarum extension
   "require")
-    COMPOSER_CACHE_DIR="${CACHE_DIR}" su-exec "${UID}:${GID}" composer require "${package}"
+    COMPOSER_CACHE_DIR="${CACHE_DIR}" su-exec "${UID}:${GID}" composer -W require "${package}"
     if [ $? -eq 0 ]; then
       echo "${package}" >> "${LIST_FILE}"
       echo -e "\n${CGREEN}${package} added to flarum.${CEND}"
